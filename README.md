@@ -1,74 +1,80 @@
-# Spring Boot & React FullStack Dashboard
+# 📊 Customer Management Portal
 
-This full-stack application is a customer dashboard where users can register, login, upload profile pictures, manage customer information, and access a small section of dashboard insights with customer info charts. The application was built using a variety of technologies and best practices to ensure high quality, maintainability, and scalability. 
+A robust, full-stack customer management dashboard crafted to provide seamless user registration, profile management, and actionable insights. Built with a modern technology stack, it emphasizes security, scalability, and automated deployment pipelines.
 
-<img src="https://i.imgur.com/QGepQZc.png" align="left" width="370px"/>
+---
 
-A strong emphasis has been placed on the DevOps side of the project, ensuring seamless integration, testing, and deployment.
+## ✨ Key Features
+- **User Authentication:** Secure registration and login flows using JWT (JSON Web Tokens).
+- **Profile Management:** Seamless upload and storage of profile pictures via AWS S3.
+- **Customer Insights:** An intuitive dashboard providing at-a-glance data visualizations.
+- **Robust Security:** Powered by Spring Security 6 with strict CORS policies and endpoint protection.
+- **Automated CI/CD:** Continuous integration and deployment via GitHub Actions.
+- **Containerized Environments:** Fully Dockerized setup for consistent local testing and production deployment.
 
-<br clear="left"/>
+## 💻 Tech Stack
 
-## DevOps
-One of the main highlights of this project is the significant emphasis on DevOps and continuous integration/continuous deployment (CI/CD) practices:
+**Frontend:**
+- React.js
+- JavaScript
+- Component-based Architecture
 
-- <ins>Docker</ins>: Used for containerization of the application, ensuring the application runs uniformly across all environments.
-<img src="https://i.imgur.com/9zpGfcw.png" align="right" width="600px"/>
+**Backend:**
+- Java & Spring Boot 3
+- Spring Data JPA / JDBC
+- Spring Security 6
 
-- <ins>Local Testing Environment</ins>: Docker is used to create a local testing environment that matches the production environment as closely as possible. This allows for thorough testing and reduces the chances of environment-specific bugs.
+**Database & Storage:**
+- PostgreSQL
+- Flyway (Database Migrations)
+- AWS S3 (Cloud Storage)
 
-- <ins>Automated Testing</ins>: Both the backend and frontend of the application have a suite of unit and integration tests. These tests are automatically run in GitHub Actions whenever a push is made to the repository, helping to ensure code quality and catch potential issues early.
+**DevOps & Infrastructure:**
+- Docker & Docker Compose
+- GitHub Actions (CI/CD)
+- AWS IAM, EC2, and Elastic Beanstalk (Hosting & Security)
 
-- <ins>Database Migrations</ins>: Flyway is used to handle database migrations, ensuring that changes to the database schema are properly managed and versioned.
-<br clear="right"/>
+## 🚀 Getting Started
 
-#### Secure Access and Deployment
-- <ins>AWS IAM Policies</ins>: Implemented strict AWS IAM policies to manage access to AWS services and resources securely.
+### Prerequisites
+Make sure you have the following installed:
+- Java JDK
+- Node.js & npm
+- Docker & Docker Compose
+- PostgreSQL
 
-- <ins>SSH Key Usage</ins>: Utilized SSH keys for secure connection to production servers, demonstrating an understanding of best practices in secure server access.
+### Local Setup
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/DevanshXerc90/Springboot-React-Fullstack.git
+   cd Springboot-React-Fullstack
+   ```
 
-## Technologies Used
+2. **Run with Docker (Recommended):**
+   The easiest way to spin up the entire environment (database, backend, frontend) is using Docker Compose.
+   ```bash
+   docker-compose up --build
+   ```
 
-With Spring Boot 3 and Spring Boot Security in mind, the application was built using the following technologies:
+3. **Manual Setup (Backend):**
+   Navigate to the `backend` directory, configure your database credentials, and run the server.
 
-<img src="https://i.imgur.com/j2CXKrG.png" align="right" width="600px"/>
+4. **Manual Setup (Frontend):**
+   Navigate to the `frontend` directory, install dependencies, and start the development server:
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
 
-- <ins>HTTP & API Development</ins>: The application exposes an API that the frontend consumes.
+## 🏗️ Architecture Overview
+This application is decoupled into independent layers:
+- **Authentication Service:** Manages JWT generation, validation, and user sessions.
+- **Customer Service:** Handles CRUD operations for customers, including S3 image integration.
+- **Security Configuration:** Ensures state-of-the-art protection across all API endpoints.
 
-- <ins>Database & PostgreSQL</ins>: Used for efficient data storage and retrieval.
+## 👨‍💻 Author
+Created and maintained by **[DevanshXerc90](https://github.com/DevanshXerc90)**.
 
-- <ins>Spring Data JPA and JDBC</ins>:Used for handling database operations.
-
-- <ins>Flyway</ins>: For seamless database migrations.
-
-- <ins>Unit Tests and Integration Tests</ins>: Tests have been written to ensure the functionality and integrity of the application.
-
-- <ins>Spring Security 6</ins>: Used for building secure and authenticated applications.
-
-- <ins>JWT</ins>: JWT tokens are used for maintaining user sessions and authentication.
-
-- <ins>AWS S3</ins>: For storing user and website images.
-
-- <ins>Docker</ins>: Used for containerization and deployment.
-
-<br clear="right"/>
-
-- <ins>GitHub Actions</ins>: Used for CI/CD, automated testing and deployment.
-
-- <ins>User Registration & Login</ins>: Users can create an account and log in.
-
-## Application Design
-The application is divided into several key components:
-
-- <ins>Authentication</ins>: The AuthenticationService class handles the core authentication logic, using JWT for token generation and management.
-- <ins>Customer Management</ins>: The CustomerService class is responsible for managing customer information. The customer images are stored in AWS S3.
-- <ins>Security</ins>: The SecurityConfig class handles the application's security configuration, ensuring that all endpoints are properly authenticated and CORS policies are respected.
-
-## Project Structure
-- <ins>Backend</ins>: The backend is organized into different packages for authentication, customer management, JWT token management, S3 file handling, and security configuration.
-- <ins>Frontend</ins>: The frontend is designed with React and JavaScript, following best practices for component structure and state management.
-
-## Author
-Developed by **DevanshXerc90**.
-
-## Conclusion
-This project showcases a robust full-stack application built with a variety of technologies and best practices. The application places a strong emphasis on the DevOps side, using automated workflows for testing and deployment with incorporation of best security practices, like AWS IAM policies and SSH keys.
+---
+*If you find this project helpful, please consider giving it a ⭐!*
