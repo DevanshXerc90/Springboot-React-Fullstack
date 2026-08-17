@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
   presa-api:
     container_name: presa-api
-    image: zenwai/presa-api
+    image: devanshxerc90/customer-api
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/customer
     ports:
@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
   presa-frontend-react:
     container_name: presa-react
-    image: zenwai/presa-react
+    image: devanshxerc90/customer-react
     build:
       context: frontend/react
       args:

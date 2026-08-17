@@ -9,15 +9,15 @@
 		<version>3.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.presa</groupId>
-	<artifactId>presa-api</artifactId>
+	<groupId>com.devanshxerc90</groupId>
+	<artifactId>customer-api</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<docker.username>zenwai</docker.username>
-		<docker.image.name>presa-api</docker.image.name>
+		<docker.username>devanshxerc90</docker.username>
+		<docker.image.name>customer-api</docker.image.name>
 		<docker.image.tag/>
 		<jsonwebtoken.version>0.11.5</jsonwebtoken.version>
 	</properties>

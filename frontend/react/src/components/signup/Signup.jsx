@@ -45,7 +45,7 @@ const Signup = () => {
                 bgGradient={{sm: 'linear(to-r, blue.600, purple.600)'}}
             >
                 <Text fontSize={"4xl"} color={'white'} fontWeight={"bold"} mb={5}>
-                    <Link target={"_blank"} href={"https://github.com/zenWai/Spring-Boot-FullStack"}>
+                    <Link target={"_blank"} href={"https://github.com/DevanshXerc90/Springboot-React-Fullstack"}>
                         Checkout GitHub Repository
                     </Link>
                 </Text>
