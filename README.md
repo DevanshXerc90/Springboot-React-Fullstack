@@ -1,12 +1,12 @@
-# Spring Boot FullStack
+# Spring Boot & React FullStack Dashboard
 
 This full-stack application is a customer dashboard where users can register, login, upload profile pictures, manage customer information, and access a small section of dashboard insights with customer info charts. The application was built using a variety of technologies and best practices to ensure high quality, maintainability, and scalability. 
+
 <img src="https://i.imgur.com/QGepQZc.png" align="left" width="370px"/>
 
 A strong emphasis has been placed on the DevOps side of the project, ensuring seamless integration, testing, and deployment.
 
 <br clear="left"/>
-DEMO: https://www.full-stack-react.awsfernandopresa.com/
 
 ## DevOps
 One of the main highlights of this project is the significant emphasis on DevOps and continuous integration/continuous deployment (CI/CD) practices:
@@ -17,8 +17,6 @@ One of the main highlights of this project is the significant emphasis on DevOps
 - <ins>Local Testing Environment</ins>: Docker is used to create a local testing environment that matches the production environment as closely as possible. This allows for thorough testing and reduces the chances of environment-specific bugs.
 
 - <ins>Automated Testing</ins>: Both the backend and frontend of the application have a suite of unit and integration tests. These tests are automatically run in GitHub Actions whenever a push is made to the repository, helping to ensure code quality and catch potential issues early.
-
-- <ins>Automatic Deployment</ins>: The application is set up to automatically deploy after any push to the main branch, utilizing AWS Amplify for the frontend and AWS EC2 for the backend. This means any validated changes can be rapidly reflected in the live application.
 
 - <ins>Database Migrations</ins>: Flyway is used to handle database migrations, ensuring that changes to the database schema are properly managed and versioned.
 <br clear="right"/>
@@ -54,8 +52,6 @@ With Spring Boot 3 and Spring Boot Security in mind, the application was built u
 
 <br clear="right"/>
 
-- <ins>AWS EC2 and Elastic Beanstalk AWS Amplify</ins>: Used for hosting the application in the cloud.
-
 - <ins>GitHub Actions</ins>: Used for CI/CD, automated testing and deployment.
 
 - <ins>User Registration & Login</ins>: Users can create an account and log in.
@@ -71,5 +67,8 @@ The application is divided into several key components:
 - <ins>Backend</ins>: The backend is organized into different packages for authentication, customer management, JWT token management, S3 file handling, and security configuration.
 - <ins>Frontend</ins>: The frontend is designed with React and JavaScript, following best practices for component structure and state management.
 
+## Author
+Developed by **DevanshXerc90**.
+
 ## Conclusion
-This project showcases a robust full-stack application built with a variety of technologies and best practices. The application places a strong emphasis on the DevOps side, using automated workflows for testing and deployment with incorporation of best security practices, like AWS IAM policies and SSH keys
+This project showcases a robust full-stack application built with a variety of technologies and best practices. The application places a strong emphasis on the DevOps side, using automated workflows for testing and deployment with incorporation of best security practices, like AWS IAM policies and SSH keys.
